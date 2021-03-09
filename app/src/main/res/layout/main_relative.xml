@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnCalcular"
+        android:layout_toEndOf="@+id/btnCalcular"
+        android:text="@string/title"
+        android:visibility="visible"
+        android:textSize="48sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/peso"
+        style="@style/input_style"
+        android:layout_marginHorizontal="24dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/altura"
+        style="@style/input_style"
+        android:layout_marginHorizontal="24dp"
+        android:layout_alignEnd="@+id/editPeso"
+        android:layout_alignStart="@+id/editPeso"
+        android:layout_below="@+id/editPeso"
+        android:visibility="visible"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_blue_focas"
+        android:elevation="8dp"
+        android:padding="16dp"
+        android:text="@string/calcular"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />
 
 </RelativeLayout>
