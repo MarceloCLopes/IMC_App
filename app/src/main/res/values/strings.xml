@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IMC App</string>
+    <string name="title">IMC</string>
+    <string name="peso">Peso (ex.: 65.8 Kg)</string>
+    <string name="altura">Altura (ex.: 1.78 m)</string>
+    <string name="calcular">Calcular</string>
 </resources>
