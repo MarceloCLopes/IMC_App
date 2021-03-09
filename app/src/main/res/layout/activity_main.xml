@@ -13,7 +13,7 @@
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IMC"
+        android:text="@string/title"
         android:textSize="48sp" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -27,7 +27,7 @@
             android:id="@+id/editPeso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Peso (ex.: 65.8 Kg)"
+            android:hint="@string/peso"
             android:inputType="numberDecimal"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -43,7 +43,7 @@
             android:id="@+id/editAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Altura (ex.: 1.78 m)"
+            android:hint="@string/altura"
             android:inputType="numberDecimal"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -57,7 +57,7 @@
         android:background="@drawable/button_blue_focas"
         android:padding="10dp"
         android:elevation="8dp"
-        android:text="Calcular"
+        android:text="@string/calcular"
         android:textSize="16sp"
         app:backgroundTint="@null" />
 </LinearLayout>
